@@ -24,10 +24,10 @@ public class OrderListRepo implements OrderRepo {
         return orders.get(index);
     }
 
-    public Order getOrder(String name){
+    public Order getOrder(String orderNumber){
         if(orders.isEmpty()) return null;
         for(Order order : orders){
-            if(order.name().equals(name))
+            if(order.orderNumber().equals(orderNumber))
                 return order;
         }
         return null;

@@ -2,5 +2,5 @@ package org.example.product;
 
 import java.math.BigDecimal;
 
-public record Product(String name, String itemNumber, BigDecimal price) {
+public record Product(String name, String itemNumber, BigDecimal price, int quantity) {
 }

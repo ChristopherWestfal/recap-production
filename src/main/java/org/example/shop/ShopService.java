@@ -2,14 +2,10 @@ package org.example.shop;
 
 import org.example.interfaces.OrderRepo;
 import org.example.order.Order;
-import org.example.order.OrderListRepo;
-import org.example.order.OrderMapRepo;
 import org.example.product.Product;
 import org.example.product.ProductRepo;
 
 import java.math.BigDecimal;
-import java.math.BigInteger;
-import java.util.ArrayList;
 import java.util.List;
 
 public class ShopService {
@@ -19,10 +15,10 @@ public class ShopService {
     public ShopService(OrderRepo orderRepo) {
         this.orderRepo = orderRepo;
 
-        productRepo.add(new Product("Säge", "12", new BigDecimal("49.99")));
-        productRepo.add(new Product("Holz", "15", new BigDecimal("11.99")));
-        productRepo.add(new Product("Hammer", "13", new BigDecimal("14.99")));
-        productRepo.add(new Product("Schrauben", "12", new BigDecimal("0.99")));
+        productRepo.add(new Product("Säge", "12", new BigDecimal("49.99"), 100));
+        productRepo.add(new Product("Holz", "15", new BigDecimal("11.99"), 100));
+        productRepo.add(new Product("Hammer", "13", new BigDecimal("14.99"), 100));
+        productRepo.add(new Product("Schrauben", "12", new BigDecimal("0.99"), 100));
     }
 
     public void placeOrder(Order order) {

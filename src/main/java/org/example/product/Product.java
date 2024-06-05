@@ -1,6 +1,6 @@
 package org.example.product;
 
-import java.math.BigInteger;
+import java.math.BigDecimal;
 
-public record Product(String name, String itemNumber, BigInteger price) {
+public record Product(String name, String itemNumber, BigDecimal price) {
 }
